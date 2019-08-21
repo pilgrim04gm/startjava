@@ -1,30 +1,31 @@
-public class ConditionalStatement{
-	public static void main(String[] args){
-		int yourAge = 30;
-		if (yourAge > 20) {
+public class ConditionalStatement {
+	public static void main(String[] args) {
+		int age = 30;
+		if (age > 20) {
 			System.out.println("Your age is more than 20");
 		}
-		boolean youAreMale = true;
-		if (youAreMale) {
+
+		boolean isMale = true;
+		if (isMale) {
 			System.out.println("Male");
 		}
-		boolean youAreFemale = false;
-		if (youAreFemale) {
+
+		if (!isMale) {
 			System.out.println("Female");
 		}
-		double yourHeight = 1.7;
-		if (yourHeight < 1.80) {
+
+		double height = 1.7;
+		if (height < 1.80) {
 			System.out.println("NotHigh");
 		} else {
 			System.out.println("High");
 		}
-		char yourNameFirstLetter = 'P';
-		boolean yourNameBeginsWithLetterM = (yourNameFirstLetter == 'M'); 
-		boolean yourNameBeginsWithLetterI = (yourNameFirstLetter == 'I');
-		if (yourNameBeginsWithLetterM) {
+
+		char nameFirstLetter = 'P';
+		if (nameFirstLetter == 'M') {
 			System.out.println("Your name begins with M");
 		} else {
-			if (yourNameBeginsWithLetterI) {
+			if (nameFirstLetter == 'I') {
 				System.out.println("Your name begins with I");
 			} else {
 				System.out.println("Your name doesn't begin with letters M or I");
