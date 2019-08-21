@@ -1,25 +1,20 @@
-import java.util.ArrayList;
-
-public class Variable{
-	public static void main(String[] args){
-		ArrayList list = new ArrayList();
+public class Variable {
+	public static void main(String[] args) {
 		byte a = 4;
-		list.add(a);
+		System.out.println(a);
 		short b = 10;
-		list.add(b);
+		System.out.println(b);
 		int c = 64;
-		list.add(c);
+		System.out.println(c);
 		long d = 240;
-		list.add(d);
+		System.out.println(d);
 		float e = 4;
-		list.add(e);
+		System.out.println(e);
 		double f = 1.8;
-		list.add(f);
+		System.out.println(f);
 		char g = 'D';
-		list.add(g);
+		System.out.println(g);
 		boolean h = 1>0;
-		list.add(h);
-		for(Object object: list)
-			System.out.println(object);
+		System.out.println(h);
 	}
 }

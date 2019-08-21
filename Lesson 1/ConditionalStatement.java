@@ -1,6 +1,6 @@
 public class ConditionalStatement{
 	public static void main(String[] args){
-		int yourAge = (int) (Math.random() * 100);
+		int yourAge = 30;
 		if (yourAge > 20) {
 			System.out.println("Your age is more than 20");
 		}
@@ -12,7 +12,7 @@ public class ConditionalStatement{
 		if (youAreFemale) {
 			System.out.println("Female");
 		}
-		double yourHeight = Math.random() * 0.4 + 1.6;
+		double yourHeight = 1.7;
 		if (yourHeight < 1.80) {
 			System.out.println("NotHigh");
 		} else {
