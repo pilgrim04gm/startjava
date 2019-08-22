@@ -1,27 +1,27 @@
 public class Variable {
 	public static void main(String[] args) {
-		byte a = 4;
-		System.out.println(a);
+		byte numberOfProcessors = 4;
+		System.out.println(numberOfProcessors);
 
-		short b = 10;
-		System.out.println(b);
+		short versionOfWindowsOS = 10;
+		System.out.println(versionOfWindowsOS);
 
-		int c = 64;
-		System.out.println(c);
+		int sizeOfHardDrive = 240;
+		System.out.println(sizeOfHardDrive);
 
-		long d = 240;
-		System.out.println(d);
+		long yearOfProduction = 2018;
+		System.out.println(yearOfProduction);
 
-		float e = 4;
-		System.out.println(e);
+		float coreSpeed = (float) 1.8;
+		System.out.println(coreSpeed);
 
-		double f = 1.8;
-		System.out.println(f);
+		double sizeOfRAM = 4.096;
+		System.out.println(sizeOfRAM);
 
-		char g = 'D';
-		System.out.println(g);
-		
-		boolean h = 1>0;
-		System.out.println(h);
+		char firstLetterOfComputerProducer = 'D';
+		System.out.println(firstLetterOfComputerProducer);
+
+		boolean isItAGoodComputer = true;
+		System.out.println(isItAGoodComputer);
 	}
 }

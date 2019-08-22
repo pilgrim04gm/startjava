@@ -24,12 +24,10 @@ public class ConditionalStatement {
 		char nameFirstLetter = 'P';
 		if (nameFirstLetter == 'M') {
 			System.out.println("Your name begins with M");
-		} else {
-			if (nameFirstLetter == 'I') {
+		} else  if (nameFirstLetter == 'I') {
 				System.out.println("Your name begins with I");
-			} else {
-				System.out.println("Your name doesn't begin with letters M or I");
-			}
+		} else { 
+			System.out.println("Your name doesn't begin with letters M or I");
 		} 
 	}
 }
