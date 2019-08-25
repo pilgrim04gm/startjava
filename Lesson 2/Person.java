@@ -19,7 +19,7 @@ public class Person {
 	}
 
 	String speak() {
-		return("");
+		return "";
 	}
 
 	void studyJava() {
