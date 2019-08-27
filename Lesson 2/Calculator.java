@@ -29,7 +29,7 @@ public class Calculator {
 		this.sign = sign;
 	}
 
-	public int calculate(int firstNumber, int secondNumber, char sign) {
+	public int calculate() {
 		int result = 1;
 		switch (sign) {
 			case '+':   result = firstNumber + secondNumber;
