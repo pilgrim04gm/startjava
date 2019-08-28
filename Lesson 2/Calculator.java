@@ -32,23 +32,26 @@ public class Calculator {
 	public int calculate() {
 		int result = 1;
 		switch (sign) {
-			case '+':   result = firstNumber + secondNumber;
-					    break;
-			case '-':   result = firstNumber - secondNumber;
-					    break;
-			case '*':   result = firstNumber * secondNumber;
-			            break;
-			case '/':   result = firstNumber / secondNumber;
-					    break;
-			case '%':	result = firstNumber % secondNumber;
-			        	break;
-			case '^': {
-						for (int i = 1; i <= secondNumber; i++) {
-							result *= firstNumber;
-						}
-						break;
-			}
-
+			case '+':   
+				result = firstNumber + secondNumber;
+				break;
+			case '-':   
+				result = firstNumber - secondNumber;
+				break;
+			case '*':   
+				result = firstNumber * secondNumber;
+			    break;
+			case '/':   
+				result = firstNumber / secondNumber;
+				break;
+			case '%':	
+				result = firstNumber % secondNumber;
+			    break;
+			case '^': 
+				for (int i = 1; i <= secondNumber; i++) {
+					result *= firstNumber;
+				}
+				break;
 		}
 		return result;
 	}
