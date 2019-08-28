@@ -8,21 +8,15 @@ public class Jaeger {
 	private int strength;
 	private int armor;
 
-	public boolean drift() {
-		System.out.println("You are in a drift mode");
-		return true;
-	}
-
-	public void move(int n) {
-		System.out.println("You have passed " + n + " steps");
-	}
-
-	public String scanKaiJu() {
-		return "nothing";
-	}
-
-	public void useVortexCannon() {
-		System.out.println("You have used Vortex Cannon");
+	public Jaeger(String modelName, String mark, String origin, double height, double weight, int speed, int strength, int armor) {
+		this.modelName = modelName;
+		this.mark = mark;
+		this.origin = origin;
+		this.height = height;
+		this.weight = weight;
+		this.speed = speed;
+		this.strength = strength;
+		this.armor = armor;
 	}
 
 	public String getModelName() {
@@ -87,5 +81,22 @@ public class Jaeger {
 
 	public void setArmor(int armor) {
 		this.armor = armor;
+	}
+
+	public boolean drift() {
+		System.out.println("You are in a drift mode");
+		return true;
+	}
+
+	public void move(int n) {
+		System.out.println("You have passed " + n + " steps");
+	}
+
+	public String scanKaiJu() {
+		return "nothing";
+	}
+
+	public void useVortexCannon() {
+		System.out.println("You have used Vortex Cannon");
 	}
 }
