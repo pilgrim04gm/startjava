@@ -2,8 +2,12 @@ public class Player {
 	private String name;
 	private int number;
 
+	public Player(String name) {
+		this.name = name;
+	}
+
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
 	public void setName(String name) {
@@ -11,14 +15,10 @@ public class Player {
 	}
 
 	public int getNumber() {
-		return this.number;
+		return number;
 	}
 
 	public void setNumber(int number) {
 		this.number = number;
-	}
-
-	public Player(String name) {
-		this.name = name;
 	}
 }
