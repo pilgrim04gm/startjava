@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class GuessNumber {
 	public Player firstPlayer, secondPlayer;
-	private int numberToGuess = (int) (100 * Math.random());
-	private Scanner sc;
+	private int numberToGuess = (int) (101 * Math.random());
+	private Scanner sc = new Scanner(System.in);
 
 	public GuessNumber(Player firstPlayer, Player secondPlayer) {
 		this.firstPlayer = firstPlayer;
@@ -12,25 +12,26 @@ public class GuessNumber {
 
 	public void startGame() {
 		do {
-			compareNumbers(firstPlayer);
-			if (firstPlayer.getNumber() != numberToGuess) {
-				compareNumbers(secondPlayer);
-			}
-		} while((firstPlayer.getNumber() != numberToGuess) && (secondPlayer.getNumber() != numberToGuess));
+		} while (!compareNumbers(firstPlayer)&&!compareNumbers(secondPlayer));
 	}
 
-	public void compareNumbers(Player player) {
+	public boolean compareNumbers(Player player) {
 		System.out.print(player.getName() + ": ");
-		scanNumber(player);
+		inputNumber(player);
 		if (player.getNumber() == numberToGuess) {
 			System.out.println("Computer: Game over! " + player.getName() + " is the winner!");
-		} else if (player.getNumber() > numberToGuess) {
-			System.out.println("Computer: < ");
-		} else System.out.println("Computer: > ");
+			return true;
+		} else {
+			if (player.getNumber() > numberToGuess) {
+				System.out.println("Computer: < ");
+			} else {
+				System.out.println("Computer: > ");
+			}
+			return false;
+		}
 	}
 
-	public void scanNumber(Player player) {
-		sc = new Scanner(System.in);
+	public void inputNumber(Player player) {
 		player.setNumber(sc.nextInt());
 	}
 }

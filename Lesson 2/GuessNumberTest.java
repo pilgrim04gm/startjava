@@ -16,8 +16,6 @@ public class GuessNumberTest {
 				System.out.print("Do you want to continue? [yes/no]: ");
 				answer = sc.nextLine();
 			} while(!answer.equals("yes") && !answer.equals("no"));
-
 		} while(answer.equals("yes"));
-		sc.close();
 	}
 }
