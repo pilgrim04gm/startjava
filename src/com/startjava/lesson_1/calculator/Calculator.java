@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.calculator;
+
 public class Calculator {
 
 	private int firstNumber;
@@ -32,26 +34,23 @@ public class Calculator {
 	public int calculate() {
 		int result = 1;
 		switch (sign) {
-			case '+':   
-				result = firstNumber + secondNumber;
-				break;
-			case '-':   
-				result = firstNumber - secondNumber;
-				break;
-			case '*':   
-				result = firstNumber * secondNumber;
-			    break;
-			case '/':   
-				result = firstNumber / secondNumber;
-				break;
-			case '%':	
-				result = firstNumber % secondNumber;
-			    break;
-			case '^': 
-				for (int i = 1; i <= secondNumber; i++) {
-					result *= firstNumber;
-				}
-				break;
+			case '+':   result = this.firstNumber + this.secondNumber;
+					    break;
+			case '-':   result = this.firstNumber - this.secondNumber;
+					    break;
+			case '*':   result = this.firstNumber * this.secondNumber;
+			            break;
+			case '/':   result = this.firstNumber / this.secondNumber;
+					    break;
+			case '%':	result = this.firstNumber % this.secondNumber;
+			        	break;
+			case '^': {
+						for (int i = 1; i <= this.secondNumber; i++) {
+							result *= this.firstNumber;
+						}
+						break;
+			}
+
 		}
 		return result;
 	}
