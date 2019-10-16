@@ -1,6 +1,6 @@
 package com.startjava.lesson_2_3.wolf;
 
-public class WolfTest{
+public class WolfTest {
 	public static void main(String[] args) {
 		Wolf firstWolf = new Wolf();
 		firstWolf.setGender('m');

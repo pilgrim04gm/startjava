@@ -1,1 +1,4 @@
-out
+out/
+src/com/startjava/test/
+/.idea/
+/startjava.iml
