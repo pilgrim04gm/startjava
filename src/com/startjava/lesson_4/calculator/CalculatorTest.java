@@ -11,7 +11,7 @@ public class CalculatorTest {
 			System.out.print("Enter mathematical expression: ");
 			str = scan.nextLine();
 			calc.setNumbers(Integer.parseInt(str.split(" ")[0]), Integer.parseInt(str.split(" ")[2]));
-			calc.setSign(str.split(" ",3)[1].charAt(0));
+			calc.setSign(str.split(" ")[1].charAt(0));
 			System.out.println(str + " = " + calc.calculate());
 
 			do {
